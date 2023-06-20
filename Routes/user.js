@@ -180,8 +180,6 @@ router.put("/update/:userId/:note_id", async(req,res)=>{
         const {userId,note_id} = req.params
         const {id,title,description,color,lastEdited} = req.body
         const user = await userModel.findOne({_id:userId})
-        console.log(userId)
-        console.log(note_id)
         if(user){
             const data = user.notes
             const index = data.findIndex((data)=>{
