@@ -13,8 +13,6 @@ const userSchema = new mongoose.Schema(
             },
         },
         password:{type:String,required:true},
-        notes:{type:Array,default:[]},
-        todolist:{type:Array,default:[]},
         createdAt:{type:Date,default:Date.now}
     }
 ) 
