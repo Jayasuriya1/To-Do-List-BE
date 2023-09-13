@@ -14,4 +14,4 @@ app.use("/user",user)
 app.use("/note",note)
 
 
-app.listen(2500,console.log("Server is runing on 2500 PORT"))
+app.listen(process.env.PORT,console.log(`Server is runing on ${process.env.PORT} PORT`))
